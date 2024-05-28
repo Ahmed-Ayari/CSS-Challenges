@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #c9d1d9;
+}
+
+:root {
+    --font-main: 'Noto Sans', sans-serif;
+    --main-bg: #000;
+    --profile-bg: #0d1117;
+    --profile-color: #c9d1d9;
+    --profile-img-border: #2e343b;
+    --username-font-color: #8b949e;
+    --username-font-weight: 400;
+    --btn-bg: #21262d;
+    --btn-color: #c9d1d9;
+    --btn-bg-hover: #30363d;
+    --btn-border: #373b43;
+    --btn-border-hover: #8c949e;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    border: 1px solid var(--profile-img-border);
+}
+
+.profile-container{
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    min-height: 250px;
+}
+
+.profile-content{
+    background-color: var(--profile-bg);
+    padding: 25px;
+    text-align: center;
+}
+
+.profile-details{
+    text-align: left;
+    font-family: var(--font-main);
+    color: var(--profile-color);
+}
+
+#btn{
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--btn-border);
+    width: 100%;
+    font-family: var(--font-main);
+}
+
+h3{
+    margin-top: -25px;
+    color: var(--username-font-color);
+    font-weight: var(--username-font-weight);
+    font-size: 15px;
+}
+
+#btn:hover {
+    border-color: var(--btn-border-hover);
+    background: var(--btn-bg-hover);
+    
+}

@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1116;
+}
+
+:root {
+    --graph-bg: #000;
+    --default-square-bg: #161b22;
+    --level3: darkblue;
+    --level5: blue;
+    --level10: lightskyblue;
+}
+
+.graph-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph{
+    display: grid;
+    background-color: var(--graph-bg);
+    grid-template-columns: repeat(52, 1fr);
+}
+
+.square{
+    width: 10px;
+    height: 10px;
+    background-color: var(--default-square-bg);
+    margin: 3px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+[data-value="3"]{
+    background-color: var(--level3);
+}
+
+[data-value="5"]{
+    background-color: var(--level5);
+}
+
+[data-value="10"]{
+    background-color: var(--level10);
+}

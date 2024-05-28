@@ -1,0 +1,28 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} 
+  
+:root {
+    --spinner: #f3f3f3;
+    --spinner-active: purple;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    border: 30px solid var(--spinner);
+    border-top: 30px solid var(--spinner-active);
+    border-radius: 50%;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    100%{
+        transform: rotate(360deg);
+    }
+}

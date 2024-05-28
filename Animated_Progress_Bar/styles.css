@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --progressbar-bg: lightgrey;
+    --start: red;
+    --middle: blue;
+    --finish: green;
+} 
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    height: 35px;
+    width: 400px;
+    background-color: var(--progressbar-bg);
+    border-radius: 30px
+}
+
+.progress-status{
+    animation: prog 5s infinite;
+}
+
+@keyframes prog {
+    0%{
+        background-color: var(--start);
+        width: 20px;
+    }
+    50%{
+        background-color: var(--middle);
+        width: 200px;
+    }
+    100%{
+        background-color: var(--finish);
+        width: 400px;
+    }
+}

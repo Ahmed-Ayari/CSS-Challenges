@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #2f7ec9;
+}
+
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1::after{
+    background-color: var(--bg-word);
+    content: "";
+    margin-left: 5px;
+    border-radius: 10%;
+    color:aliceblue;
+    animation: word 3s ease-in-out 250ms infinite normal;
+    padding: 5px;
+}
+
+@keyframes word {
+    0%{
+        content: 'Video Games';
+    }
+
+    50%{
+        content: 'Gym'
+    }
+
+    100%{
+        content: 'Coding';
+    }
+}
