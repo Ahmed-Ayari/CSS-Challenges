@@ -14,9 +14,8 @@ Welcome to **CSS-Challenges**, a repository dedicated to enhancing your CSS skil
 To get started with these challenges, simply clone this repository and open the `index.html` file in your browser. Each challenge is contained within its own directory, complete with an `index.html` file and corresponding CSS file.
 
 ```bash
-git clone https://github.com/yourusername/css-challenges.git
-cd css-challenges
-open index.html
+git clone https://github.com/Ahmed-Ayari/CSS-Challenges.git
+cd CSS-Challenges
 ```
 
 ## Contributions
